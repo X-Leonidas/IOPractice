@@ -57,7 +57,7 @@ public class BIOEchoClient {
     /**
      * 模拟多个客户端访问，了解bio的同步阻塞特性
      */
-    private void multiClient() {
+    public void multiClient() {
         for (; i.intValue() < 20; ) {
             new Thread(() -> {
                 Socket socket = null;
