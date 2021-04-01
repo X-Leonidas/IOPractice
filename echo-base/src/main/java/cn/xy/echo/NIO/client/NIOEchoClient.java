@@ -1,4 +1,4 @@
-package cn.xy.NIO.client;
+package cn.xy.echo.NIO.client;
 
 import com.xy.info.HostInfo;
 import com.xy.util.InputUtil;

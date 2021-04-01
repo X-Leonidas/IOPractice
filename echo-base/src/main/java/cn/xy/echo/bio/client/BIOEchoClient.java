@@ -1,4 +1,4 @@
-package cn.xy.bio.client;
+package cn.xy.echo.bio.client;
 
 import com.xy.info.HostInfo;
 import com.xy.util.InputUtil;
