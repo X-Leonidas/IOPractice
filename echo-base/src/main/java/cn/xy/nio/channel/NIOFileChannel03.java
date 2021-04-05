@@ -23,7 +23,6 @@ public class NIOFileChannel03 {
             while (inputChannel.read(byteBuffer) != -1 ){
                 byteBuffer.flip();
                 outputChannel.write(byteBuffer);
-                byteBuffer.clear();
             }
         } catch (IOException e) {
             e.printStackTrace();
