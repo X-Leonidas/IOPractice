@@ -1,4 +1,4 @@
-package cn.xy.GroupChat;
+package cn.xy.nio.GroupChat;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
