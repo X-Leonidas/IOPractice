@@ -16,13 +16,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdk.version>11</jdk.version>
+        <jdk.version>1.8</jdk.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <junit.version>4.12</junit.version>
         <netty.version>4.1.31.Final</netty.version>
         <echo.version>1.0</echo.version>
-        <msgpack.version>0.6.12</msgpack.version>
-        <jboss-marshalling.version>2.0.6.Final</jboss-marshalling.version>
         <fastjson.version>1.2.51</fastjson.version>
     </properties>
     <dependencyManagement>
@@ -33,7 +31,22 @@
                 <version>${echo.version}</version>
             </dependency>
 
-
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>3.6.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.12.1</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>2.12.1</version>
+            </dependency>
 
 
             <dependency>
@@ -54,6 +67,7 @@
                 <configuration>
                     <source>${jdk.version}</source><!-- 源代码使用的开发版本 -->
                     <target>${jdk.version}</target><!-- 需要生成的目标class文件的编译版本 -->
+                    <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
         </plugins>
